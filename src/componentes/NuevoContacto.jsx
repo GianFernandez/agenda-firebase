@@ -15,7 +15,7 @@ function NuevoContacto({ agregarNuevoContacto }) {
             telefono: telefonoRef.current.value,
         }
 
-        baseDeDatos.collention('contactos').add(contacto);
+        baseDeDatos.collection('contactos').add(contacto);
         nombreRef.current.value = "";
         apellidoRef.current.value = "";
         telefonoRef.current.value = "";

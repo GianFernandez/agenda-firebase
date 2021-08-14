@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { baseDeDatos } from './ConfigFirebase';
+import {useState} from 'react';
+import {baseDeDatos} from './ConfigFirebase';
 import NuevoContacto from './componentes/NuevoContacto';
 import logo from './logo.svg';
 import './App.css';
@@ -12,7 +12,7 @@ function App() {
     const copyContactos = contactos.slice();
     copyContactos.push(contactos);
     setContactos(copyContactos);
-  }
+  };
 
   function cargarContactos() {
     const list = [];
